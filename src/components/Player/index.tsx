@@ -2,26 +2,26 @@ import styles from './styles.module.scss';
 
 export function Player() {
   return (
-    <div className={ styles.playerContainer }>
+    <div className={styles.playerContainer}>
       <header>
-        <img src="/playing.svg" alt="Tocando agora"/>
+        <img src="/playing.svg" alt="Tocando agora" />
         <strong>Tocando agora</strong>
       </header>
 
-      <div className={ styles.emptyPlayer }>
+      <div className={styles.emptyPlayer}>
         <strong>Selecione um podcast para ouvir</strong>
       </div>
 
-      <footer className={ styles.empty }>
-        <div className={ styles.progress }>
+      <footer className={styles.empty}>
+        <div className={styles.progress}>
           <span>00:00</span>
-          <div className={ styles.slider}>
-            <div className={ styles.emptySlider } />
+          <div className={styles.slider}>
+            <div className={styles.emptySlider} />
           </div>
           <span>00:00</span>
         </div>
 
-        <div className={ styles.buttons }>
+        <div className={styles.buttons}>
           <button type="button">
             <img src="/shuffle.svg" alt="Embaralhar" />
           </button>
@@ -29,7 +29,7 @@ export function Player() {
           <button type="button">
             <img src="/play-previous.svg" alt="Tocar anterior" />
           </button>
-          <button type="button" className={ styles.playButton }>
+          <button type="button" className={styles.playButton}>
             <img src="/play.svg" alt="Tocar anterior" />
           </button>
           <button type="button">
@@ -41,7 +41,6 @@ export function Player() {
           </button>
         </div>
       </footer>
-
     </div>
-  )
+  );
 }
